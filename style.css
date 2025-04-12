@@ -355,8 +355,8 @@ html {
     }
 	.circular-image {
 		margin: 5px;
-		height: 120px !important;
-		width: 120px !important; 
+		height: 80px !important;
+		width: 80px !important; 
 	}
     .event-text{
         width:100%;

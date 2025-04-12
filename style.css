@@ -33,7 +33,16 @@
     background-size: cover;
     background-position:center;
     background-color: #efeff0; 
-    
+}
+.header-container {
+	position: relative;
+}
+.gradient {
+    position:absolute;
+    z-index:2;
+    right:0; bottom:0; left:0;
+    height:200px;
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #33174b 80%);
 }
 .description{
     height: 650px;
@@ -91,6 +100,7 @@
 
 .circular-image {
 	margin: 50px;
+	margin-top: -40px;
 }
 
 .icons{
@@ -338,6 +348,7 @@ html {
 		margin: 20px;
 		height: 180px !important;
 		width: 180px !important; 
+		margin-top: -50px;
 	}
 	.image-text {
 		color: orange;
@@ -376,10 +387,18 @@ html {
         text-align: center;
         font-size: 30px;
     }
+	.gradient {
+		position:absolute;
+		z-index:2;
+		right:0; bottom:0; left:0;
+		height:100px;
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #33174b 80%);
+	}
 	.circular-image {
 		margin: 10px;
 		height: 150px !important;
 		width: 150px !important; 
+		margin-top: -40px;
 	}
 	.image-text {
 		color: orange;
@@ -463,6 +482,13 @@ html {
         width: 100%;;
         font-size: 13px;
     }
+	.gradient {
+		position:absolute;
+		z-index:2;
+		right:0; bottom:0; left:0;
+		height:100px;
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #33174b 80%);
+	}
     .title{
         text-align: center;
         font-size: 25px;
@@ -480,6 +506,7 @@ html {
 		margin: 8px;
 		height: 120px !important;
 		width: 120px !important; 
+		margin-top: -40px;
 	}
 	.image-text {
 		color: orange;

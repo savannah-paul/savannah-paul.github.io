@@ -1,6 +1,6 @@
 /*CSS variables section*/
 :root {
-    background-color: #4b2869;
+    background-color: #33174b;
     
 }
 
@@ -69,8 +69,14 @@
 	display: flex;
 }
 
+.image-text {
+	color: orange;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+}
+
 .circular-image {
-	margin: 20px;
+	margin: 50px;
 }
 
 .icons{
@@ -91,6 +97,54 @@ main{
     text-transform: uppercase;
     
 }
+/* FAQ SECTION */ 
+.accordion, .accordion-last {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  max-width: 900px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion-section {
+	text-align: center;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+  border-bottom-left-radius:0px !important;
+  border-bottom-right-radius:0px !important;
+}
+
+.accordion:after, .accordion-last:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* END FAQ */
 
 
 .game-logo img{
@@ -104,17 +158,14 @@ h3{
 }
 
 .sessions{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    /* background-color:	rgba(0, 0, 47,0.3); */
-    justify-content: space-evenly;
+    display: block;
 }
 .session-list{
     margin: 30px;;
     padding: 20px;
     height: 200px;
-    width:800px;
+    width: 70%;
+	max-width: 900px;
     display: flex;
     align-items: center;
     border:1px solid gray;
@@ -124,6 +175,8 @@ h3{
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+	margin-left: auto;
+	margin-right: auto;
 }
 .session-list:hover{
     transform: scale(1.05);

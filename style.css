@@ -483,8 +483,12 @@ html {
 		font-size: 15px;
 		font-weight: 700;
 	}
+	.session-info{
+		display: contents;
+	}
 	.session-info h3{
-		font-size: 20px;
+		font-size: 18px;
+		padding: 5px;
 	}
 	.session-list{
 		width: 90%;
@@ -495,6 +499,7 @@ html {
 		padding: 2px;
 		height:50px;
 		border-radius: 18px;
+		color: black;
 	}
 	.accordion-section {
 		margin:20px;

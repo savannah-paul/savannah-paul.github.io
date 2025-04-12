@@ -201,6 +201,10 @@ h3{
 .register-button:hover {
 	transform: scale(1.05);
 }
+.register-button:active, .register-button:visited {
+	padding: 5px;
+	border-radius: 18px;
+}
 .session-list:hover{
     transform: scale(1.02);
 }

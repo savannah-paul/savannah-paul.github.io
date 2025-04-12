@@ -65,6 +65,20 @@
 	text-align: center;
 }
 
+.about-description {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align:center;
+	padding: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 10px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .image-row {
 	display: flex;
 }
@@ -169,7 +183,7 @@ h3{
     display: flex;
     align-items: center;
     border:1px solid gray;
-    background: rgba(255, 75, 255, 0.1);
+    background: rgba(130, 13, 13, 0.36);
     box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -178,12 +192,23 @@ h3{
 	margin-left: auto;
 	margin-right: auto;
 }
+.register-button {
+	text-align:center;
+	margin-left: auto;
+	padding: 5px;
+	border-radius: 18px;
+}
+.register-button:hover {
+	transform: scale(1.05);
+}
 .session-list:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .session-info{
     padding: 20px;
+	display: flex;
+	width: 100%;
 }
 
 .game-store{
@@ -304,7 +329,18 @@ html {
     main{
         width:100% !important;
         margin: auto !important;
-    }    
+    }
+	.circular-image {
+		margin: 20px;
+		height: 180px !important;
+		width: 180px !important; 
+	}
+	.image-text {
+		color: orange;
+		font-family: "Raleway", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+	}
     
 }
 
@@ -340,6 +376,28 @@ html {
 		margin: 10px;
 		height: 150px !important;
 		width: 150px !important; 
+	}
+	.image-text {
+		color: orange;
+		font-family: "Raleway", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.session-list{
+		width: 90%;
+	}
+	.session-info h3{
+		font-size: 20px;
+	}
+	.register-button {
+		text-align:center;
+		margin-left: auto;
+		padding: 2px;
+		height:50px;
+		border-radius: 18px;
+	}
+	.accordion-section {
+		margin:20px;
 	}
     .event-text{
         width:80%;
@@ -405,10 +463,41 @@ html {
         text-align: center;
         font-size: 25px;
     }
+	.about-description {
+		font-family: "Raleway", sans-serif;
+		font-size: 15px;
+		color: white;
+		text-align:center;
+		padding: 10px;
+		margin-top: 10px;
+		
+	}
 	.circular-image {
 		margin: 8px;
-		height: 90px !important;
-		width: 90px !important; 
+		height: 120px !important;
+		width: 120px !important; 
+	}
+	.image-text {
+		color: orange;
+		font-family: "Raleway", sans-serif;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	.session-info h3{
+		font-size: 20px;
+	}
+	.session-list{
+		width: 90%;
+	}
+	.register-button {
+		text-align:center;
+		margin-left: auto;
+		padding: 2px;
+		height:50px;
+		border-radius: 18px;
+	}
+	.accordion-section {
+		margin:20px;
 	}
     .event-text{
         width:100%;

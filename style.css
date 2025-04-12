@@ -337,7 +337,6 @@ html {
     .header-content{
         height: 450px !important;
         background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
-		margin-top: -10px;
     }
     .description{
         height: 450px;
@@ -357,9 +356,9 @@ html {
         font-size: 25px;
     }
 	.circular-image {
-		margin: 5px;
-		height: 80px !important;
-		width: 80px !important; 
+		margin: 8px;
+		height: 90px !important;
+		width: 90px !important; 
 	}
     .event-text{
         width:100%;

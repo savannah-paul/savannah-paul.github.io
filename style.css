@@ -33,7 +33,7 @@
     background-size: cover;
     background-position:center;
     background-color: #efeff0; 
-
+	margin-top: -2px;
     
 }
 .description{
@@ -238,6 +238,7 @@ html {
     .header-content{
         height: 550px !important;;
         background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
+		margin-top: -2px;
     }
     .description{
         height: 550px
@@ -267,6 +268,7 @@ html {
     .header-content{
         height: 400px !important;
         background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
+		margin-top: -2px;
     }
     .description{
         height: 400px;
@@ -335,6 +337,7 @@ html {
     .header-content{
         height: 450px !important;
         background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
+		margin-top: -2px;
     }
     .description{
         height: 450px;

@@ -226,6 +226,7 @@ h3{
 }
 .register-button:hover {
 	transform: scale(1.05);
+	border-radius: 18px;
 }
 .register-button:active {
 	padding: 5px;

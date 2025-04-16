@@ -12,7 +12,7 @@
 		font-size: 18px !important;
 	}
 	.header-content{
-		height: 500px;
+		height: 550px;
 		background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -50,6 +50,11 @@
 	}
 	.header-title {
 		text-shadow: -1px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black;
+	}
+	.header-banner{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 	.header-image {
 		width: 350px;
@@ -322,6 +327,9 @@
 	}
 	.session-title{
 		font-size: 30px;
+	}
+	.header-banner{
+		width: 40%;
 	}    
 }
 

@@ -506,6 +506,9 @@
 	.session-title{
 		font-size: 25px;
 	} 
+	.header-banner{
+		width: 55%;
+	}
 }
 
 
@@ -536,4 +539,5 @@
 		padding: 1px;
 		font-size: 13px;
 	}
+	
 }

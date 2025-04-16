@@ -128,27 +128,30 @@
 		margin-left: auto;
 		padding: 5px;
 		border-radius: 18px;
-	}
-	.register-button:link, .register-button:visited {
-		padding: 5px;
-		border-radius: 18px;
+		height: 40px;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	.register-button:hover {
 		transform: scale(1.05);
-		border-radius: 18px;
-	}
-	.register-button:active {
-		padding: 5px;
-		border-radius: 18px;
 	}
 	.session-list:hover{
 		transform: scale(1.02);
 	}
 	.session-info{
 		padding: 20px;
-		display: flex;
+		display: block;
 		width: 100%;
 	} 
+	.session-info-text, .session-info-text h3{
+		text-align: left !important;
+	}
+	.session-info-text {
+		padding-right: 15px;
+	}
+	.session-info-header {
+		display: flex;
+	}
 	
 /* --- FAQ --- */ 
 	.accordion, .accordion-last {
@@ -186,6 +189,7 @@
 	}
 	.panel {
 		font-family: "Noto Sans JP", sans-serif;
+		text-align:left;
 		padding: 0 18px;
 		background-color: white;
 		max-height: 0;
@@ -194,6 +198,9 @@
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.panel p {
+		padding: 15px;
 	}
 
 /* --- CONTACT SECTION ---*/
@@ -226,6 +233,12 @@
 	text-align: center;
 	font-weight: 500;
 	font-size: 40px;
+}
+.camp-info{
+	display:flex;
+}
+.camp-info-text{
+	padding: 20px;
 }
 
 /* --- GENERAL --- */
@@ -328,6 +341,11 @@
 	.session-title{
 		font-size: 30px;
 	}
+	.register-button{
+		font-size: 13px;
+		height:40px;
+		padding:5px;
+	}
 	.header-banner{
 		width: 40%;
 	}    
@@ -383,12 +401,13 @@
 	.session-info h3{
 		font-size: 20px;
 	}
-	.register-button {
-		text-align:center;
-		margin-left: auto;
-		padding: 2px;
-		height:50px;
-		border-radius: 18px;
+	.session-info-text p {
+		font-size: 13px;
+	}
+	.register-button{
+		font-size: 13px;
+		height:40px;
+		padding:5px;
 	}
     .contact-list{
         width: 300px;
@@ -465,23 +484,27 @@
 		font-size: 13px;
 		font-weight: 700;
 	}
-	.session-info{
-		display: contents;
+	.session-info {
+		padding-right: 0px;
 	}
 	.session-info h3{
-		font-size: 16px;
-		padding: 10px;
+		font-size: 13px;
+	}
+	.session-info-text p {
+		font-size: 10px;
+	}
+	.session-info-text {
+		padding:0px;
 	}
 	.session-list{
 		width: 90%;
+		height: auto;
+		padding: 10px;
 	}
-	.register-button {
-		text-align:center;
-		margin-left: auto;
-		padding: 2px;
-		height:50px;
-		border-radius: 18px;
-		color: black;
+	.register-button{
+		font-size: 10px;
+		height:30px;
+		padding:5px;
 	}
     img{
         width: 100%;

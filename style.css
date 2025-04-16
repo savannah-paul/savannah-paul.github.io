@@ -216,6 +216,13 @@
 		justify-content: space-evenly;
 	}
 	
+/* --- SESSION PAGES --- */
+.session-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 40px;
+}
+
 /* --- GENERAL --- */
 	main{
 		width:80% !important;
@@ -313,7 +320,9 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
-    
+	.session-title{
+		font-size: 30px;
+	}    
 }
 
 /*Small screens - tablets*/
@@ -486,6 +495,9 @@
     p{
         font-size: 15px;
     }
+	.session-title{
+		font-size: 25px;
+	} 
 }
 
 

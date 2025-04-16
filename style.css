@@ -90,6 +90,7 @@
 		margin: 50px;
 		/*margin-top: -40px;*/
 		box-shadow: 10px 10px 20px gray;
+		margin-bottom: 10px;
 	}
 	
 /* --- SESSION LIST --- */
@@ -296,7 +297,7 @@
 		margin: 20px;
 		height: 180px !important;
 		width: 180px !important; 
-		box-shadow: 10px 10px 20px black;
+		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
 		font-size: 20px;
@@ -305,9 +306,13 @@
 	.header-text p{
 		font-size: 16px;
 	}
-.session-list{
-	width: 95%;
-}
+	.session-list{
+		width: 95%;
+	}
+	.image-col{
+		margin-right: auto;
+		margin-left: auto;
+	}
     
 }
 
@@ -349,7 +354,7 @@
 		margin: 10px;
 		height: 150px !important;
 		width: 150px !important; 
-		box-shadow: 10px 10px 20px black;
+		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
 		font-size: 16px;
@@ -437,7 +442,7 @@
 		margin-bottom: 8px;
 		height: 90px !important;
 		width: 90px !important; 
-		box-shadow: 10px 10px 20px black;
+		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
 		font-size: 13px;
@@ -494,7 +499,7 @@
 		margin-bottom: 8px;
 		height: 70px !important;
 		width: 70px !important; 
-		box-shadow: 10px 10px 20px black;
+		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
 		font-size: 11px;

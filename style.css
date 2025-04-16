@@ -1,351 +1,260 @@
-/*CSS variables section*/
 :root {
-    background-color: #33174b;
-    
+    background-color: #ffffff; 
 }
 
 /*Extra Large screens - Extra large desktops*/
-.header{
-    
 
-}
-.heeder-large-screen{
-    display: flex !important;
-    justify-content: space-evenly !important;
-    color:orange;
-    font-size: 18px !important;
+/* --- HEADER --- */
+	.header-large-screen{
+		display: flex !important;
+		justify-content: space-evenly !important;
+		color:black;
+		font-size: 18px !important;
+	}
+	.header-content{
+		height: 500px;
+		background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:center;
+		background-color: #efeff0; 
+	}
+	.header-container {
+		position: relative;
+	}
+	.gradient {
+		position:absolute;
+		z-index:2;
+		right:0; bottom:0; left:0;
+		height: 100px;
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #ffffff  80%);
+	}
+	.header-text{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header-text p{
+		font-family: "Noto Sans JP", sans-serif;
+		color: white;
+		font-size: 23px;
+		font-weight: 700;
+	}
+	.header-title{
+		font-family: "Noto Sans JP", sans-serif;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-size: 80px;
+		color:orange;
+		text-align: center;
+		width: 100%;
+	}
+	.header-title {
+		text-shadow: -1px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black;
+	}
+	.header-image {
+		width: 350px;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: -110px;
+	}
+	.header-subtitle{
+		width: 100%;
+		text-align: center;
+	}
+	.about-description {
+		font-family: "Noto Sans JP", sans-serif;
+		font-size: 18px;
+		color: black;
+		text-align:center;
+		padding: 15px;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-top: 10px;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
+/* --- ABOUT SECTION --- */
+	.image-row {
+		display: flex;
+	}
+	.image-text {
+		color: black;
+		font-family: "Noto Sans JP", sans-serif;
+		font-weight: 700;
+	}
+	.circular-image {
+		margin: 50px;
+		/*margin-top: -40px;*/
+		box-shadow: 10px 10px 20px black;
+	}
+	
+/* --- SESSION LIST --- */
+	.sessions{
+		display: block;
+	}
+	.session-list{
+		margin: 30px;;
+		padding: 20px;
+		height: 200px;
+		width: 70%;
+		max-width: 900px;
+		display: flex;
+		align-items: center;
+		border:1px solid gray;
+		background: rgba(180, 88, 3, 0.58);
+		box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+		backdrop-filter: blur( 4px );
+		-webkit-backdrop-filter: blur( 4px );
+		border-radius: 10px;
+		border: 1px solid rgba( 255, 255, 255, 0.18 );
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.session-list h3:hover {
+		text-decoration: underline;
+	}
+	.register-button {
+		font-family: "Noto Sans JP", sans-serif;
+		text-align:center;
+		margin-left: auto;
+		padding: 5px;
+		border-radius: 18px;
+	}
+	.register-button:link, .register-button:visited {
+		padding: 5px;
+		border-radius: 18px;
+	}
+	.register-button:hover {
+		transform: scale(1.05);
+		border-radius: 18px;
+	}
+	.register-button:active {
+		padding: 5px;
+		border-radius: 18px;
+	}
+	.session-list:hover{
+		transform: scale(1.02);
+	}
+	.session-info{
+		padding: 20px;
+		display: flex;
+		width: 100%;
+	} 
+	
+/* --- FAQ --- */ 
+	.accordion, .accordion-last {
+		font-family: "Noto Sans JP", sans-serif;
+		background-color: #e2e2e2;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		max-width: 900px;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 17px;
+		transition: 0.4s;
+	}
+	.accordion-section {
+		text-align: center;
+		padding: 30px;
+	}
+	.active, .accordion:hover {
+		background-color: #ccc;
+		border-bottom-left-radius:0px !important;
+		border-bottom-right-radius:0px !important;
+	}
+	.accordion:after, .accordion-last:after {
+		content: '\002B';
+		color: #777;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	.active:after {
+		content: "\2212";
+	}
+	.panel {
+		font-family: "Noto Sans JP", sans-serif;
+		padding: 0 18px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-}
-#navDemo{
-    background-color: #000015;
-    
-}
-#navDemo a{
-    font-size: 13px !important;
-    color:orange;
-}
-
-.header-content{
-    height: 500px;
-    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    background-color: #efeff0; 
-}
-.header-container {
-	position: relative;
-}
-.gradient {
-    position:absolute;
-    z-index:2;
-    right:0; bottom:0; left:0;
-    height: 100px;
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #33174b 80%);
-}
-.description{
-    height: 500px;
-    background-color: rgba(0, 0, 21, .7);
-    display: flex;
-}
-.header-text{
-    margin-left: auto;
-	margin-right: auto;
-}
-
-
-.header-text p{
-    color:white;
-	font-size: 20px;
-}
-.header-title{
-     /* padding-top:80px; */
-     font-weight: 800;
-    text-transform: uppercase;
-    font-size: 80px;
-    color:orange;
-    text-align: center;
-	width: 100%;
-}
-
-.header-image {
-    width: 350px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: -110px;
-}
-
-.header-subtitle{
-	width: 100%;
-	text-align: center;
-}
-
-.about-description {
-	font-family: "Raleway", sans-serif;
-	font-size: 18px;
-	color: white;
-	text-align:center;
-	padding: 15px;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-top: 10px;
-	max-width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.image-row {
-	display: flex;
-}
-
-.image-text {
-	color: orange;
-	font-family: "Raleway", sans-serif;
-	font-weight: 700;
-}
-
-.circular-image {
-	margin: 50px;
-	margin-top: -40px;
-	box-shadow: 10px 10px 20px black;
-}
-
-.icons{
-    font-size: 20px;
-    letter-spacing: 5px;
-
-}
-main{
-    width:80% !important;
-    margin: auto !important;
-}
-.title{
-    color:white;
-    font-weight: 600;
-    font-size: 40px;;
-    margin-top:50px;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-/* FAQ SECTION */ 
-.accordion, .accordion-last {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  max-width: 900px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.accordion-section {
-	text-align: center;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-  border-bottom-left-radius:0px !important;
-  border-bottom-right-radius:0px !important;
-}
-
-.accordion:after, .accordion-last:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* END FAQ */
-
-
-.game-logo img{
-    width:100%;
-    height: 100%;
-    object-fit: contain;
-}
-h3{
-    color:white;
-    text-align: center;
-}
-
-.sessions{
-    display: block;
-}
-.session-list{
-    margin: 30px;;
-    padding: 20px;
-    height: 200px;
-    width: 70%;
-	max-width: 900px;
-    display: flex;
-    align-items: center;
-    border:1px solid gray;
-    background: rgba(130, 13, 13, 0.36);
-    box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-	margin-left: auto;
-	margin-right: auto;
-}
-.session-list h3:hover {
-	text-decoration: underline;
-}
-.register-button {
-	text-align:center;
-	margin-left: auto;
-	padding: 5px;
-	border-radius: 18px;
-}
-.register-button:link, .register-button:visited {
-	padding: 5px;
-	border-radius: 18px;
-}
-.register-button:hover {
-	transform: scale(1.05);
-	border-radius: 18px;
-}
-.register-button:active {
-	padding: 5px;
-	border-radius: 18px;
-}
-.session-list:hover{
-    transform: scale(1.02);
-}
-
-.session-info{
-    padding: 20px;
-	display: flex;
-	width: 100%;
-}
-
-.game-store{
-    margin-top: 20px !important;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-}
-.game-image{
-    width:300px;
-    height: 180px;
-    
-}
-.game-image img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-}
-.game-store-list{
-    width:300px;
-    height: 300px;
-     margin: 20px;
-    overflow: hidden;
-    border-top: none;
-    
-      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-bottom: 1px solid blueviolet;
-    color:white;
-     
-}
-.store-text-description{
-    padding-left:20px;
-    display: flex;
-    flex-direction: column;
-} 
-h4{
-    color:white;
-    font-weight: 700;
-}
-
-.event-text{
-    width:50%;
-    color: orange;
-}
-.event-title{
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.event-image{
-    width:400px;
-    height: 500px;
-}
-.event-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.event-text p{
-    color: white;
-}
-.contact{
-	max-width: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-	margin-left: auto;
-	margin-right: auto;
-}
-.contact-list{
-    margin-top: 15px !important;
-    color: white;
-	width: 300px;
-    padding:25px;
-    border:1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-}
-h5{
-    color:white;
-}
-span{
-    padding-right: 10px;
-}
-.email-contact{
-    width:80%;
-    color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-
-/*General CSS and CSS reset*/
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
+/* --- CONTACT SECTION ---*/
+	.contact{
+		max-width: 900px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contact-list{
+		margin-top: 15px !important;
+		color: black;
+		width: 300px;
+		padding:25px;
+		border:1px solid black;
+		border-radius: 10px;
+	}
+	.email-contact{
+		width:80%;
+		color: gray;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+/* --- GENERAL --- */
+	main{
+		width:80% !important;
+		margin: auto !important;
+	}
+	.title{
+		font-family: "Noto Sans JP", sans-serif;
+		color:black;
+		font-weight: 600;
+		font-size: 40px;;
+		margin-top:50px;
+		text-align: center;
+		text-transform: uppercase;
+		
+	}
+	h3{
+		color:black;
+		text-align: center;
+	}
+	h4{
+		color:black;
+		font-weight: 700;
+	}
+	h5{
+		color:black;
+	}
+	span{
+		padding-right: 10px;
+	}
+	h1, h2, h3, h4, h5, h6, html, body {
+		font-family: "Noto Sans JP", sans-serif;
+	}
+	html {
+	  scroll-behavior: smooth;
+	}
+	* {
+	  margin: 0;
+	  padding: 0;
+	}
 
 /* ____________________________________________________________________*/
 /*MEDIA QUERIES*/
@@ -354,6 +263,10 @@ html {
     .header-content{
         height: 450px !important;;
         background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/d-d-farmer-background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:center;
+		background-color: #efeff0; 
     }
     .description{
         height: 450px
@@ -377,16 +290,16 @@ html {
         width:100% !important;
         margin: auto !important;
     }
+	.header-title {
+		font-size: 50px;
+	}
 	.circular-image {
 		margin: 20px;
 		height: 180px !important;
 		width: 180px !important; 
-		margin-top: -50px;
 		box-shadow: 10px 10px 20px black;
 	}
 	.image-text {
-		color: orange;
-		font-family: "Raleway", sans-serif;
 		font-size: 20px;
 		font-weight: 700;
 	}
@@ -398,9 +311,6 @@ html {
 
 /*Small screens - tablets*/
 @media screen and (max-width: 768px) {
-    .heeder-large-screen{
-        display:block !important;
-    }
     header a{
         font-size: 14px;
     }
@@ -410,7 +320,6 @@ html {
     }
     .description{
         height: 300px;
-        background-color: rgba(0, 0, 21, .7);
     }
     .header-title{
         font-size: 35px;;
@@ -433,18 +342,14 @@ html {
 		z-index:2;
 		right:0; bottom:0; left:0;
 		height:100px;
-		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #33174b 80%);
 	}
 	.circular-image {
 		margin: 10px;
 		height: 150px !important;
 		width: 150px !important; 
-		margin-top: -40px;
 		box-shadow: 10px 10px 20px black;
 	}
 	.image-text {
-		color: orange;
-		font-family: "Raleway", sans-serif;
 		font-size: 16px;
 		font-weight: 700;
 	}
@@ -464,28 +369,6 @@ html {
 	.accordion-section {
 		margin:20px;
 	}
-    .event-text{
-        width:80%;
-        color: blueviolet;
-
-    }
-    .event-text p{
-        font-size: 13px;
-    }
-    .event-title{
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-    .event-image{
-        width:250px;
-        height: 400px;
-    }
-    .event-image img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
     .contact-list{
         width: 300px;
     }
@@ -494,17 +377,18 @@ html {
     }
     .contact-list p{
         font-size: 14px ;
-
     }
     h5{
         font-size: 17px;
     }
-    
+	p{
+		font-size: 16px;
+	}
 }
 
 /*Extra small screens - phones*/
 @media screen and (max-width: 560px) {
-    .heeder-large-screen{
+	.header-large-screen{
         display:block !important;
     }
     .header-content{
@@ -513,7 +397,7 @@ html {
     }
     .description{
         height: 300px;
-        background-color: rgba(0, 0, 21, .7);
+		margin-top: -30px;
     }
 	.header-image{
 		width: 160px;
@@ -524,8 +408,11 @@ html {
     .header-title{
         font-size: 30px;
     }
+	.header-text{
+		padding-top:20px;
+	}
     .header-text p{
-        width: 100%;;
+        width: 100%;
         font-size: 13px;
     }
 	.gradient {
@@ -533,40 +420,36 @@ html {
 		z-index:2;
 		right:0; bottom:0; left:0;
 		height:80px;
-		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #33174b 80%);
 	}
     .title{
         text-align: center;
         font-size: 25px;
     }
 	.about-description {
-		font-family: "Raleway", sans-serif;
 		font-size: 15px;
-		color: white;
+		color: black;
 		text-align:center;
 		padding: 10px;
 		margin-top: 10px;
 		
 	}
 	.circular-image {
-		margin: 8px;
-		height: 120px !important;
-		width: 120px !important; 
-		margin-top: -50px;
+		margin: 11px;
+		margin-bottom: 8px;
+		height: 90px !important;
+		width: 90px !important; 
 		box-shadow: 10px 10px 20px black;
 	}
 	.image-text {
-		color: orange;
-		font-family: "Raleway", sans-serif;
-		font-size: 15px;
+		font-size: 13px;
 		font-weight: 700;
 	}
 	.session-info{
 		display: contents;
 	}
 	.session-info h3{
-		font-size: 18px;
-		padding: 5px;
+		font-size: 16px;
+		padding: 10px;
 	}
 	.session-list{
 		width: 90%;
@@ -582,18 +465,6 @@ html {
 	.accordion-section {
 		margin:20px;
 	}
-    .event-text{
-        width:100%;
-        color: blueviolet;
-    }
-    .event-text p{
-        font-size: 13px;
-    }
-    .event-title{
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
     img{
         width: 100%;
         height: 100%;
@@ -602,7 +473,7 @@ html {
     .contact-list{
         width: 300px;
         padding:25px;
-        border:1px solid rgba(255, 255, 255, 0.5);
+        border:1px solid black;
         border-radius: 10px;
     }
     .contact-list p{
@@ -612,7 +483,36 @@ html {
         font-size: 15px;
     }
     p{
-        font-size: 12px;
+        font-size: 15px;
     }
-    
+}
+
+
+/*Extra EXTRA small screens - phones*/
+@media screen and (max-width: 350px) {
+	.header-content{
+        height: 280px !important;
+    }
+	.circular-image {
+		margin: 11px;
+		margin-bottom: 8px;
+		height: 70px !important;
+		width: 70px !important; 
+		box-shadow: 10px 10px 20px black;
+	}
+	.image-text {
+		font-size: 11px;
+		font-weight: 700;
+	}
+	.about-description {
+		font-size: 12px;
+	}
+	.session-info h3 {
+		font-size: 13px;
+		padding: 1px;
+	}
+	.register-button {
+		padding: 1px;
+		font-size: 13px;
+	}
 }

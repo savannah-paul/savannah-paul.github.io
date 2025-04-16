@@ -110,6 +110,7 @@
 .circular-image {
 	margin: 50px;
 	margin-top: -40px;
+	box-shadow: 10px 10px 20px black;
 }
 
 .icons{

@@ -220,10 +220,14 @@ h3{
 	padding: 5px;
 	border-radius: 18px;
 }
+.register-button:link, .register-button:visited {
+	padding: 5px;
+	border-radius: 18px;
+}
 .register-button:hover {
 	transform: scale(1.05);
 }
-.register-button:active, .register-button:visited {
+.register-button:active {
 	padding: 5px;
 	border-radius: 18px;
 }

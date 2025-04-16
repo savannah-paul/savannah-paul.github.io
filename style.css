@@ -26,7 +26,7 @@
 		position:absolute;
 		z-index:2;
 		right:0; bottom:0; left:0;
-		height: 100px;
+		height: 120px;
 		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, #ffffff  80%);
 	}
 	.header-text{
@@ -89,7 +89,7 @@
 	.circular-image {
 		margin: 50px;
 		/*margin-top: -40px;*/
-		box-shadow: 10px 10px 20px black;
+		box-shadow: 10px 10px 20px gray;
 	}
 	
 /* --- SESSION LIST --- */
@@ -100,7 +100,6 @@
 		margin: 30px;;
 		padding: 20px;
 		height: 200px;
-		width: 70%;
 		max-width: 900px;
 		display: flex;
 		align-items: center;
@@ -162,7 +161,7 @@
 	}
 	.accordion-section {
 		text-align: center;
-		padding: 30px;
+		padding: 20px;
 	}
 	.active, .accordion:hover {
 		background-color: #ccc;
@@ -306,6 +305,9 @@
 	.header-text p{
 		font-size: 16px;
 	}
+.session-list{
+	width: 95%;
+}
     
 }
 
@@ -354,7 +356,7 @@
 		font-weight: 700;
 	}
 	.session-list{
-		width: 90%;
+		width: 95%;
 	}
 	.session-info h3{
 		font-size: 20px;
@@ -365,9 +367,6 @@
 		padding: 2px;
 		height:50px;
 		border-radius: 18px;
-	}
-	.accordion-section {
-		margin:20px;
 	}
     .contact-list{
         width: 300px;
@@ -461,9 +460,6 @@
 		height:50px;
 		border-radius: 18px;
 		color: black;
-	}
-	.accordion-section {
-		margin:20px;
 	}
     img{
         width: 100%;

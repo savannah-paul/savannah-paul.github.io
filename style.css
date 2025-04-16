@@ -382,6 +382,7 @@ html {
 		height: 180px !important;
 		width: 180px !important; 
 		margin-top: -50px;
+		box-shadow: 10px 10px 20px black;
 	}
 	.image-text {
 		color: orange;
@@ -439,6 +440,7 @@ html {
 		height: 150px !important;
 		width: 150px !important; 
 		margin-top: -40px;
+		box-shadow: 10px 10px 20px black;
 	}
 	.image-text {
 		color: orange;
@@ -551,6 +553,7 @@ html {
 		height: 120px !important;
 		width: 120px !important; 
 		margin-top: -50px;
+		box-shadow: 10px 10px 20px black;
 	}
 	.image-text {
 		color: orange;

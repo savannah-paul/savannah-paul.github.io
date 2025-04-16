@@ -211,6 +211,9 @@ h3{
 	margin-left: auto;
 	margin-right: auto;
 }
+.session-list h3:hover {
+	text-decoration: underline;
+}
 .register-button {
 	text-align:center;
 	margin-left: auto;

@@ -1,5 +1,5 @@
 :root {
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 /*Extra Large screens - Extra large desktops*/
@@ -17,7 +17,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position:center;
-		background-color: #efeff0; 
+		background-color: #efeff0;
 	}
 	.header-container {
 		position: relative;
@@ -97,7 +97,7 @@
 		box-shadow: 10px 10px 20px gray;
 		margin-bottom: 10px;
 	}
-	
+
 /* --- SESSION LIST --- */
 	.sessions{
 		display: block;
@@ -136,13 +136,14 @@
 		transform: scale(1.05);
 	}
 	.session-list:hover{
-		transform: scale(1.02);
+		/*transform: scale(1.008);*/
+    zoom: 102%;
 	}
 	.session-info{
 		padding: 20px;
 		display: block;
 		width: 100%;
-	} 
+	}
 	.session-info-text, .session-info-text h3{
 		text-align: left !important;
 	}
@@ -152,8 +153,8 @@
 	.session-info-header {
 		display: flex;
 	}
-	
-/* --- FAQ --- */ 
+
+/* --- FAQ --- */
 	.accordion, .accordion-last {
 		font-family: "Noto Sans JP", sans-serif;
 		background-color: #e2e2e2;
@@ -227,7 +228,7 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 	}
-	
+
 /* --- SESSION PAGES --- */
 .session-title{
 	text-align: center;
@@ -239,6 +240,11 @@
 }
 .camp-info-text{
 	padding: 20px;
+}
+
+/* --- PAYMENT PAGE --- */
+.paypal-container {
+
 }
 
 /* --- GENERAL --- */
@@ -254,7 +260,7 @@
 		margin-top:50px;
 		text-align: center;
 		text-transform: uppercase;
-		
+
 	}
 	h3{
 		color:black;
@@ -291,7 +297,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position:center;
-		background-color: #efeff0; 
+		background-color: #efeff0;
     }
     .description{
         height: 450px
@@ -321,7 +327,7 @@
 	.circular-image {
 		margin: 20px;
 		height: 180px !important;
-		width: 180px !important; 
+		width: 180px !important;
 		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
@@ -357,7 +363,7 @@
 	}
 	.header-banner{
 		width: 40%;
-	}    
+	}
 }
 
 /*Small screens - tablets*/
@@ -374,7 +380,7 @@
     }
     .header-title{
         font-size: 35px;;
-        
+
     }
 	.header-image{
 		width: 190px;
@@ -397,7 +403,7 @@
 	.circular-image {
 		margin: 10px;
 		height: 150px !important;
-		width: 150px !important; 
+		width: 150px !important;
 		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
@@ -427,12 +433,15 @@
     .contact-list p{
         font-size: 14px ;
     }
-    h5{
+    h5, h3{
         font-size: 17px;
     }
 	p{
 		font-size: 16px;
 	}
+  #gform {
+    width: 100%;
+  }
 }
 
 /*Extra small screens - phones*/
@@ -480,13 +489,13 @@
 		text-align:center;
 		padding: 10px;
 		margin-top: 10px;
-		
+
 	}
 	.circular-image {
 		margin: 11px;
 		margin-bottom: 8px;
 		height: 90px !important;
-		width: 90px !important; 
+		width: 90px !important;
 		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
@@ -538,7 +547,7 @@
     .contact-list p{
         font-size: 12px ;
     }
-    h5{
+    h5, h3{
         font-size: 15px;
     }
     p{
@@ -546,10 +555,14 @@
     }
 	.session-title{
 		font-size: 25px;
-	} 
+	}
 	.header-banner{
 		width: 55%;
 	}
+
+  #gform {
+    width: 100%;
+  }
 }
 
 
@@ -562,7 +575,7 @@
 		margin: 11px;
 		margin-bottom: 8px;
 		height: 70px !important;
-		width: 70px !important; 
+		width: 70px !important;
 		box-shadow: 10px 10px 20px gray;
 	}
 	.image-text {
@@ -580,5 +593,5 @@
 		padding: 1px;
 		font-size: 13px;
 	}
-	
+
 }

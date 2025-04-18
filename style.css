@@ -286,6 +286,9 @@
 	  margin: 0;
 	  padding: 0;
 	}
+  #gform{
+    height: 1600px;
+  }
 
 /* ____________________________________________________________________*/
 /*MEDIA QUERIES*/
@@ -313,6 +316,9 @@
 	.header-text p{
 		font-size: 17px;
 	}
+  #gform{
+    height: 1600px;
+  }
 }
 
 /*medium screens - Laptops*/
@@ -364,6 +370,9 @@
 	.header-banner{
 		width: 40%;
 	}
+  #gform{
+    height: 1600px;
+  }
 }
 
 /*Small screens - tablets*/
@@ -439,8 +448,9 @@
 	p{
 		font-size: 16px;
 	}
-  #gform {
-    width: 100%;
+  #gform{
+    width: 500px;
+    height: 1700px;
   }
 }
 
@@ -520,11 +530,6 @@
 		height: auto;
 		padding: 10px;
 	}
-	.register-button{
-		font-size: 10px;
-		height:30px;
-		padding:5px;
-	}
 	.camp-info {
 		display: grid;
 	}
@@ -561,7 +566,8 @@
 	}
 
   #gform {
-    width: 100%;
+    width: 400px;
+    height: 1700px;
   }
 }
 
@@ -590,7 +596,6 @@
 		padding: 1px;
 	}
 	.register-button {
-		padding: 1px;
 		font-size: 13px;
 	}
 

@@ -139,6 +139,9 @@
 		/*transform: scale(1.008);*/
     zoom: 102%;
 	}
+  .nav-bar:hover, .nav-bar-first:hover, .nav-bar-last:hover{
+    zoom: 103%;
+  }
 	.session-info{
 		padding: 20px;
 		display: block;
@@ -471,7 +474,7 @@
 		width: 160px;
 		height: 100px;
 		margin-bottom: -30px;
-		margin-top: 30px;
+		margin-top: 38px;
 	}
     .header-title{
         font-size: 30px;
@@ -483,6 +486,19 @@
         width: 100%;
         font-size: 13px;
     }
+  .header-text-div {
+    margin-right:auto;
+    margin-left: auto;
+  }
+  .right {
+    display: flex;
+  }
+  .nav-bar-first{
+    margin-left:auto;
+  }
+  .nav-bar-last{
+    margin-right:auto !important;
+  }
 	.gradient {
 		position:absolute;
 		z-index:2;

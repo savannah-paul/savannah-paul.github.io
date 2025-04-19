@@ -22,6 +22,9 @@
 	.header-container {
 		position: relative;
 	}
+  .w3-top{
+    background-color: #6a63633b;
+  }
 	.gradient {
 		position:absolute;
 		z-index:2;

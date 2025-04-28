@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title> Grimoire Games | D&D Summer Camps in Boulder </title>
+    <link rel="icon" type="image/png" href="images/book-logo.png">
+    <meta name="description" content="Join us this June for a story-rich Dungeons & Dragons summer camp where adventurers of all experience levels come together to explore magical realms! Ages 8-12. Boulder, Colorado.">
     <meta charset="UTF-8">
-	<meta name="theme-color" content="#000000">
+	  <meta name="theme-color" content="#000000">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Grimoire Games</title>
 </head>
 <body>
-    <div class="w3-top" class="header" id="home">
+  <header>
+    <div class="top-bar header" id="home">
       <div class="w3-bar  w3-card w3-left-align w3-large header-large-screen">
         <div class="header-text-div" style="display:contents;">
 					<p style="margin-left:auto;margin-right:auto;text-align: center; color:orange;"> Registration closes May 25th! <p>
@@ -30,47 +33,43 @@
         </div>
       </div>
     </div>
-      <section onclick="document.location='index.html'">
+  </header>
+  <section onclick="document.location='index.html'">
 		<div class="header-container">
-         <div class="header-content">
+        <div class="header-content">
            <div class="description">
              <div class="header-text">
-				<img class="header-image" src="images/book-logo.png"/>
-				<h1 class="header-title">Grimoire Games</h1>
-				<img class="header-banner" src="images/banner.png"/>
-             </div>
+				         <img class="header-image" src="images/book-logo.png" alt="An open book">
+				         <h1 class="header-title">Grimoire Games</h1>
+				         <img class="header-banner" src="images/banner.png" alt="Fantasy countryside at sunset.">
              </div>
            </div>
-		   <div class="gradient">
          </div>
-      </section>
-      <main style="padding:0px 30px 40px 30px;">
+		   <div class="gradient"></div>
+    </div>
+  </section>
+  <main style="padding:0px 30px 40px 30px;">
+      <h2 class="session-title" style="margin-top:10px;padding-bottom:20px;">Step 1: Camper Information Form</h2>
+		  <h3 style="text-align:center;"> Fill out the form below, then you will be redirected to payment ($250) in the next step. </h3>
+      <div class="camp-info">
+			    <div class="camp-info-text" style="display:grid;margin-right:auto;margin-left:auto;">
+            <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSd9jAI4Q-BCkLaPGOKp3LravBbRzbxOouBEWHLHTcafmDjjvw/viewform?embedded=true" width="640" height="1560" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+			    </div>
+      </div>
+  </main>
 
+<script>
+  var load = 0;
 
-        <h2 class="session-title" style="margin-top:10px;padding-bottom:20px;">Step 1: Camper Information Form</h2>
-		<h3 style="text-align:center;"> Fill out the form below, then you will be redirected to payment ($250) in the next step. </h3>
-        <div class="camp-info">
-			<div class="camp-info-text" style="display:grid;margin-right:auto;margin-left:auto;">
-        <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSd9jAI4Q-BCkLaPGOKp3LravBbRzbxOouBEWHLHTcafmDjjvw/viewform?embedded=true" width="640" height="1560" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-			</div>
-        </div>
-
-      </main>
-
-
-<script type="text/javascript">
-var load = 0;
-
-document.getElementById('gform').onload = function(){
-    /*Execute on every reload on iFrame*/
-    load++;
-    if(load > 1){
-        /*Second reload is a submit*/
-        document.location = 'payment_tnt.html';
-    }
-}
+  document.getElementById('gform').onload = function(){
+      /*Execute on every reload on iFrame*/
+      load++;
+      if(load > 1){
+          /*Second reload is a submit*/
+          document.location = 'payment_tnt.html';
+      }
+  }
 </script>
-
 
 </body>
 </html>

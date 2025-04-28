@@ -22,8 +22,12 @@
 	.header-container {
 		position: relative;
 	}
-  .w3-top{
+  .top-bar{
     background-color: #6a63633b;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
   }
 	.gradient {
 		position:absolute;

@@ -216,6 +216,9 @@
 	}
 
 /* --- CONTACT SECTION ---*/
+  .contact-div{
+    display:flex;
+  }
 	.contact{
 		max-width: 900px;
 		display: flex;
@@ -329,6 +332,12 @@
 	}
   #gform{
     height: 1600px;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .contact-div{
+    display:block;
   }
 }
 

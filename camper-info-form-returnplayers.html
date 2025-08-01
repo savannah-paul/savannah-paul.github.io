@@ -38,31 +38,31 @@
 					<div id="header" class="container">
 
 
-            <!-- Nav -->
-							<nav id="nav">
-								<ul>
-                  <li><a href="index.html">Home</a></li>
-									<li>
-										<a href="#">Current Sessions</a>
-										<ul>
-											<li><a href="dnd-afterschool-bpl.html">D&D After School - BPL</a></li>
-											<li><a href="dnd-returnplayers.html">D&D [Return Players Only]</a></li>
-											<!--
-											<li>
-												<a href="#">After School D&D</a>
-												<ul>
-													<li><a href="#">Tuesday - Boulder Public Library</a></li>
-													<li><a href="#">Saturday - Boulder Public Library</a></li>
-													<li><a href="#">Friday - Superior Community Center</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-										-->
-										</ul>
-									</li>
-									<li><a href="about.html">About</a></li>
-								</ul>
-							</nav>
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Current Sessions</a>
+									<ul>
+										<li><a href="dnd-afterschool-bpl.html">D&D After School - BPL</a></li>
+										<li><a href="dnd-returnplayers.html">D&D [Return Players Only]</a></li>
+										<!--
+										<li>
+											<a href="#">After School D&D</a>
+											<ul>
+												<li><a href="#">Tuesday - Boulder Public Library</a></li>
+												<li><a href="#">Saturday - Boulder Public Library</a></li>
+												<li><a href="#">Friday - Superior Community Center</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+											</ul>
+										</li>
+									-->
+									</ul>
+								</li>
+								<li><a href="about.html">About</a></li>
+							</ul>
+						</nav>
 					</div>
 
 					<!-- Hero -->
@@ -83,26 +83,20 @@
         <div class="wrapper">
           <section class="container">
             <div class="row features">
+
               <section class="col-12 col-12-narrower feature">
-                    <h2><b>About Us</b></h2><br>
-                    <h3 style="padding-left:40px;padding-right:40px;">At Grimoire Games, we believe in the power of storytelling, imagination, and a well-rolled d20. We specialize in running Dungeons & Dragons sessions designed just for kids, combining adventure and creativity in a safe, engaging environment.
-                        <br><br>
-                        Our team has years of experience working with kids, both as after-school instructors and as organizers of a dedicated Dungeons & Dragons summer camp. We've guided young heroes through quests and know how to tailor every adventure to suit their age, interests, and energy.
-                        <br><br>
-                        We're currently partnering with schools to lead after-school programs, and also host standalone Dungeons & Dragons sessions.
-                        <br><br>
-                        Whether your child is brand new to the world of fantasy role-playing or a seasoned young adventurer, Grimoire Games is here to help them embark on unforgettable journeys—one roll at a time.</h3>
-                        <br><br><br><br>
-                        <h3 style="color:red;"> Want to see us in your school? Send us an email! </h3>
-                        <br>
-                        <ul class="divided icons col-4 col-12-mobile">
-      										<li class="icon fa-envelope">grimoiregamesco@gmail.com</li>
-      									</ul>
+                    <h2><b>Step 1: Camper Information Form</b></h2><br>
+              		  <h3 style="text-align:center;"> Fill out the form below, then you will be redirected to payment ($220) in the next step. </h3><br>
+                    <div class="camp-info">
+              			    <div class="camp-info-text" style="margin-right:auto;margin-left:auto;">
+                            <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdZp8gyK9hbDk92hiXm-DAt2ImUEVRuwfbUZTBLvszk7qnHIw/viewform?embedded=true" width="640" height="1700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+												</div>
+                    </div>
               </section>
             </div>
           </section>
-          <br><br><br><br>
         </div>
+
 
 
 			<!-- Footer -->
@@ -136,13 +130,25 @@
 
 		</div>
 
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.dropotron.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <script>
+      var load = 0;
+
+      document.getElementById('gform').onload = function(){
+          /*Execute on every reload on iFrame*/
+          load++;
+          if(load > 1){
+              /*Second reload is a submit*/
+              document.location = 'payment-returnplayers.html';
+          }
+      }
+    </script>
 
 
 	</body>

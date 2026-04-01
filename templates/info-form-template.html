@@ -6,9 +6,9 @@
 -->
 <html>
 	<head>
-    <title>Grimoire Games | D&D Summer Camps in Boulder </title>
+		<title>Grimoire Games | D&D Clubs, Camps & Adventures in Boulder</title>
 		<link rel="icon" type="image/png" href="images/book-logo-square.png">
-		<meta name="description" content="Join us for a story-rich Dungeons & Dragons summer camp where adventurers of all experience levels come together to explore magical realms! Ages 8-12. Boulder, Colorado.">
+		<meta name="description" content="Grimoire Games offers Dungeons & Dragons after-school programs and summer camps in Boulder, Colorado. Kids ages 8–12 join story-driven adventures, build teamwork skills, and explore imaginative worlds.">
 		<script type="application/ld+json">
 			{
 				"@context" : "https://schema.org",
@@ -45,7 +45,7 @@
 								<li>
 									<a href="#">Sessions</a>
 									<ul>
-										<li><a href="spring-session.html">D&D Spring Session</a></li>
+										<li><a href="dnd-winter.html">D&D Winter Session</a></li>
 										<!--
 										<li>
 											<a href="#">After School D&D</a>
@@ -82,10 +82,15 @@
         <div class="wrapper">
           <section class="container">
             <div class="row features">
+
               <section class="col-12 col-12-narrower feature">
-                    <h2><b>Registration Complete!</b></h2><br>
-                    <p>Look out for an email from us containing waivers and general information 1-2 weeks before the session start date!</p>
-                    <br><br><br><br><br>
+                    <h2><b>Step 1: Camper Information Form</b></h2><br>
+              		  <h3 style="text-align:center;"> Fill out the form below, then you will be redirected to payment ($____) in the next step. </h3><br>
+                    <div class="camp-info">
+              			    <div class="camp-info-text" style="margin-right:auto;margin-left:auto;">
+                                <iframe id="gform" src="____" width="670" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							</div>
+                    </div>
               </section>
             </div>
           </section>
@@ -106,7 +111,7 @@
 										<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/grimoiregamesco"><span class="extra">facebook.com/</span>grimoiregamesco</a></li>
 									</ul>
 									<ul class="divided icons col-4 col-12-mobile">
-										<li class="icon fa-comment">720-854-4488</li>
+										<li class="icon fa-comment">‪720-432-3119‬</li>
 									</ul>
 									<ul class="divided icons col-4 col-12-mobile">
 										<li class="icon fa-envelope"><span class="extra">grimoiregamesco@gmail.com</li>
@@ -131,6 +136,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script>
+      var load = 0;
+
+      document.getElementById('gform').onload = function(){
+          /*Execute on every reload on iFrame*/
+          load++;
+          if(load > 1){
+              /*Second reload is a submit*/
+              document.location = '____.html';
+          }
+      }
+    </script>
 
 
 	</body>

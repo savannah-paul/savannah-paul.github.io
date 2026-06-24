@@ -165,6 +165,14 @@ body {
 	overflow-x: hidden;
 }
 
+.donate-button {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 40px;
+	margin-bottom: -50px;
+}
+
 ol, ul {
 	list-style: none;
 }
